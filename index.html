@@ -4,13 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Langkawi Escapes | Luxury Tourism & Yacht Charters</title>
+    <title>Vamoz | Luxury Tourism & Yacht Charters</title>
     <meta name="description"
         content="Experience the best of Langkawi with our luxury yacht charters, sunset cruises, and island hopping tours. Book your dream vacation today.">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -20,10 +30,10 @@
     <!-- Header -->
     <header id="header">
         <div class="container">
-            <div class="logo">
-                <img src="assets/logo.svg" alt="Langkawi Escapes Logo" id="logo-img">
-                <span>Langkawi Escapes</span>
-            </div>
+            <a href="#" class="logo">
+                <img src="assets/vamoz_logo.png" alt="Vamoz Logo" id="logo-img">
+                <span>Vamoz</span>
+            </a>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#hero">Home</a></li>
@@ -47,7 +57,7 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-content">
+        <div class="hero-content" data-aos="fade-up">
             <h1>Discover the Jewel of Kedah</h1>
             <p>Experience luxury yacht charters and unforgettable island adventures in Langkawi.</p>
             <a href="#packages" class="btn btn-primary">Explore Packages</a>
@@ -57,10 +67,10 @@
     <!-- Packages Section -->
     <section id="packages">
         <div class="container">
-            <h2 class="section-title">Our Premium Packages</h2>
+            <h2 class="section-title" data-aos="fade-up">Our Premium Packages</h2>
             <div class="packages-grid">
                 <!-- Package 1 -->
-                <div class="package-card">
+                <div class="package-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="card-image">
                         <img src="assets/package1.svg" alt="Sunset Cruise">
                     </div>
@@ -73,7 +83,7 @@
                     </div>
                 </div>
                 <!-- Package 2 -->
-                <div class="package-card">
+                <div class="package-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-image">
                         <img src="assets/package2.svg" alt="Island Hopping">
                     </div>
@@ -86,7 +96,7 @@
                     </div>
                 </div>
                 <!-- Package 3 -->
-                <div class="package-card">
+                <div class="package-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="card-image">
                         <img src="assets/package3.svg" alt="Mangrove Tour">
                     </div>
@@ -104,9 +114,9 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
+            <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
             <div class="contact-wrapper">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <p>123 Marina Harbour, Kuah, 07000 Langkawi, Kedah</p>
@@ -117,14 +127,14 @@
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <p>hello@langkawiescapes.com</p>
+                        <p>hello@vamoz.com</p>
                     </div>
                     <div class="social-links">
                         <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" data-aos="fade-left">
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
                     <textarea placeholder="Message" rows="5" required></textarea>
@@ -137,7 +147,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Langkawi Escapes. All rights reserved.</p>
+            <p>&copy; 2025 Vamoz. All rights reserved.</p>
         </div>
     </footer>
 
@@ -146,6 +156,15 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
